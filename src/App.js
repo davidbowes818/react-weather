@@ -6,9 +6,15 @@ const api = {
 };
 
 function App() {
-  return <div className="app"></div>;
+  return (
+    <div className="app">
+      <main>
+        <div className="search-box">
+          <input type="text" className="search-bar" placeholder="Search..." />
+        </div>
+      </main>
+    </div>
+  );
 }
-
-console.log(api.key);
 
 export default App;
