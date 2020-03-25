@@ -8,19 +8,28 @@
 
 html,
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: 'Inria Sans', sans-serif;
+  background: #212121;
 }
 
 .app {
   background: url('./assets/cold-bg.jpg');
-  background-size: cover;
-  background-position: bottom;
-  transition: 0.4 ease;
-  max-width: 400px;
 }
 
 .app.warm {
   background: url('./assets/warm-bg.jpg');
+}
+
+.app,
+.app.warm {
+  background-size: cover;
+  background-position: bottom;
+  transition: background 2s ease;
+  max-width: 400px;
 }
 
 main {
