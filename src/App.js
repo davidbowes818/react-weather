@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const api = {
-  key: process.env.REACT_APP_API_KEY,
+  key: `${process.env.REACT_APP_API_KEY}`,
   base: 'https://api.openweathermap.org/data/2.5/'
 };
 
@@ -20,6 +20,7 @@ function App() {
         })
         .catch(err => console.log(err));
     }
+    console.log(api.key);
   };
 
   const dateBuilder = d => {
