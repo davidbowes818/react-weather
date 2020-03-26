@@ -16,7 +16,6 @@ function App() {
         .then(data => {
           setWeather(data);
           setQuery('');
-          console.log(data);
         })
         .catch(err => console.log(err));
     }
